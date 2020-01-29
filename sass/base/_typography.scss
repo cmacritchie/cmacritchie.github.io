@@ -1,0 +1,61 @@
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: $color-grey-dark;
+}
+
+.heading-primary {
+    color: $color-white;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+
+    &--main {
+        display: block;
+        font-size: 6rem;
+        font-weight: 400;
+        
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+    }
+
+    &--container {
+        display: flex;  
+        // display: -webkit-box;
+        // display: -moz-box;
+        // display: -ms-flexbox;
+        // display: -webkit-flex;
+        // display: flex;
+        
+        // -webkit-flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &--sub {
+        padding: 10px;
+        margin: 5px;
+        opacity: 0;
+        animation-name: moveInBottom;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;  //keeps stlye afterwards
+
+        &--1 {
+            animation-delay: 0.75s;
+        }
+
+        &--2 {
+            animation-delay: 1.25s;
+        }
+
+        &--3 {
+            animation-delay: 1.75s;
+        }
+    }
+}
+

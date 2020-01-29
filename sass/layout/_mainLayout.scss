@@ -1,0 +1,74 @@
+.headster {
+    font-size: 1.4rem;
+    background-color: grey;
+
+    &__text-box {
+        text-transform: uppercase;
+        text-align: center;
+        color: black;
+    } 
+
+}
+
+.modules {
+
+    display: flex;  
+    
+    align-items: center;
+    flex-wrap: wrap;
+
+    @include respond(tab-port) {
+        justify-content: space-around;
+    }
+}
+
+.feature-box {
+    background-color: rgba($color-grey-light-1, .8);
+    border: solid darkblue;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin: 1.5rem;
+    width: 20rem;
+    height: 25rem;
+    text-align: center;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    transition: transform .3s;
+    cursor: pointer;
+
+    @include respond(tab-port) {
+        width: 16rem;
+        height: 17rem;
+    }
+
+    &:hover {
+        transform: scale(1.10);
+    }
+
+    &__image img {
+        border-radius: 5px;
+        width: 15rem; 
+        height: 15rem;
+
+        @include respond(tab-port) {
+            width: 12rem;
+            height: 12rem;
+        }
+    }
+
+    &__description {
+        display: block;
+
+        @include respond(tab-port) {
+            display: none;
+        }
+        
+    }
+}
+
+.content {
+    padding: 3rem;
+
+    @include respond(tab-port) {
+        padding: 0.5rem;
+    }
+}
