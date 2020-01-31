@@ -2,7 +2,7 @@
 const mainLayout =({ page }) => Page => {
     return () => (
     <>
-        <div className="container">
+        <div>
             <header className="headster">
                 <h1 className="headster__text-box">{page}</h1>
             </header>
@@ -10,8 +10,7 @@ const mainLayout =({ page }) => Page => {
             <div className="content">
                 <Page />
             </div>
-
-    </div>
+        </div>
 
     </>
     )

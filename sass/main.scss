@@ -14,17 +14,17 @@
 @import "layout/navigation";
  
 @import "pages/about";
-// @import "pages/home";
+@import "pages/contact";
 // @import "pages/projects";
 
 @import "layout/mainLayout";
 
 .container {
-    max-width: 160rem;
-    margin: 8rem auto;
-    background-color: whitesmoke;
+    // max-width: 160rem;
+    // margin: 8rem auto;
+    // background-color: whitesmoke;
     box-shadow: darkblue;
-
+    // background-image: linear-gradient($color-primary, $color-primary-dark);
     min-height: 50rem;
 
     // @media only screen and (max-width: $bp-largest) {
@@ -33,3 +33,5 @@
     //     width: 100%;
     // }
 } 
+
+a { color:$color-primary-dark2}

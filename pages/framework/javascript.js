@@ -1,17 +1,25 @@
 // import React from 'react'
-import mainLayout from '../../HOC/mainLayout'
+import pageLayout from '../../HOC/pageLayout'
 // import "../css/style.css"
 
 const Node = () => {
     return (
-        <p>
-            Javascript
-        </p>
+        <>
+            <p>
+                My Javascript carreer started off  when I learned vanilla javascript, then eventually Jquery. I really liked the 
+                syntax and maleability of javascript so I decided to study other javascript libraries including React, Node.js, Next.js
+                and other npm packages
+            </p>
+            <p>
+                Recently, I started looking at data structures and algorithms by looking at stephen Griders' course on Udemy.
+                I really enjoy working on MERN stack projects. 
+            </p>
+        </>
     )
 }
 
 const details = {
-    page: 'Node.js'
+    page: 'Javascript'
   }
 
-export default mainLayout(details)(Node)
+export default pageLayout(details)(Node)

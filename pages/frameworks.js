@@ -1,5 +1,6 @@
 import withLayout from '../HOC/mainLayout'
 import mainLayout from '../HOC/mainLayout';
+import fadeInSection from '../HOC/fadeInSection';
 import "../css/style.css"
 import frameworks from '../icons/frameworks'
 import Link from 'next/link';
@@ -31,7 +32,8 @@ return (
   );
 }
   const details = {
-    page: 'frameworks'
+    page: 'Skills'
   }
 
 export default mainLayout(details)(Frameworks)
+// export default fadeInSection(Frameworks)

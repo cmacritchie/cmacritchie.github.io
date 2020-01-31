@@ -5,14 +5,14 @@ export default [
         picture: "no pic",
         link:'react',
         icon:'icons8-react.svg',
-        description: "Popular javascript library for front end applications. experience includes higher order components, context API, hooks, Redux state management and more!",
+        description: "Redux, Context API, HOC, Hooks",
     },
     {
         title:"Node js",
         keywords:["javascript", "node"],
         link:'node',
         icon:'icons8-nodejs.svg',
-        description: "javascript runtime environment. used with express to create web framework server. Node js makes creating RESTful APIs, websockets, and database interaction easy.",
+        description: "Express, websockets, JWT, Middleware, npm",
         
     },
     {
@@ -20,7 +20,7 @@ export default [
         keywords:["noSQL"],
         link:'mongodb',
         icon:'icons8-mongodb.svg',
-        description: "NoSQL cross platform document-oriented database. Pairs well with Mongoose Object Data Modeling for Node.js applications",
+        description: "NoSQL, Mongoose, Mongo Atlas, aggregation",
         
     },
     {
@@ -29,7 +29,7 @@ export default [
         picture: "no pic",
         link:'docker',
         icon:'icons8-docker.svg',
-        description: "Operating System virtualization for deploying software applications in containers",
+        description: "containerization, NGINX, DockerHub",
     },
     {
         title:"Python",
@@ -37,7 +37,7 @@ export default [
         picture: "no pic",
         link:'python',
         icon:'icons8-python.svg',
-        description: "Used alongside numerous popular libraries including beautiful soup, jupyter notebook, raspberry pi, etc.",
+        description: "Pandas, Scikit-Learn, NumPy, GPIO, Jupyter",
     },
     {
         title:"C#",
@@ -45,7 +45,7 @@ export default [
         picture: "no pic",
         link:'csharp',
         icon:'icons8-c-sharp-logo.svg',
-        description: "Experience with command line, desktop, and web server applications, robust and flexible framework, design patterns",
+        description: "Object-Oriented, Design Patterns, Desktop App",
     },
     {
         title:"ASP.NET & .Net core",
@@ -53,15 +53,15 @@ export default [
         picture: "no pic",
         link:'aspnet',
         icon:'icons8-windows-10.svg',
-        description: "flexible framework for creating a number of applications ",
+        description: "MVC, Full Stack, Entity Framework",
     },
     {
-        title:"SASS & CSS3",
+        title:"CSS3 & SASS",
         keywords:["css", "styling"],
         picture: "no pic",
         link:'sass',
         icon:'icons8-sass.svg',
-        description: "Styling sheets improve website presentation. When you add the SASS preprocessor you get something great... like this website! ",
+        description: "BEM, stylesheets, animations",
     },
     {
         title:"Google Cloud",
@@ -69,14 +69,14 @@ export default [
         picture: "no pic",
         link:'googlecloud',
         icon:'icons8-google-cloud-platform.svg',
-        description: "cloud platform offered by google, spin up instances and create great applications",
+        description: "Cloud applications",
     },
     {
         title:"Javascript",
         keywords:["container", "containerization"],
         picture: "no pic",
-        link:'googlecloud',
+        link:'javascript',
         icon:'icons8-javascript.svg',
-        description: "Javascript framework ES6",
+        description: "ES6, data structures, algorithms",
     }
 ]

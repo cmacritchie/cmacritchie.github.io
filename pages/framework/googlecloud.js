@@ -2,16 +2,18 @@
 import mainLayout from '../../HOC/mainLayout'
 // import "../css/style.css"
 
-const Node = () => {
+const GoogleCloud = () => {
     return (
-        <div>
-            Node Js is a great framework, truly inspiring, very good!
-        </div>
+        <>
+            <p>
+                Google Cloud
+            </p>
+        </>
     )
 }
 
 const details = {
-    page: 'Node.js'
+    page: 'Google Cloud'
   }
 
-export default mainLayout(details)(Node)
+export default mainLayout(details)(GoogleCloud)
