@@ -20,6 +20,9 @@ body {
         animation-name: moveInLeft;
         animation-duration: 1s;
         animation-timing-function: ease-out;
+        @include respond(phone) {
+            font-size: 5rem;
+        }
     }
 
     &--container {

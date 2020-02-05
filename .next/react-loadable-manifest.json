@@ -1,8 +1,14 @@
 {
   "./about": [
     {
-      "id": "./HOC/mainLayout.js",
-      "name": "./HOC/mainLayout.js",
+      "id": "./HOC/blocksLayout.js",
+      "name": "./HOC/blocksLayout.js",
+      "file": "static/chunks/3.js",
+      "publicPath": "static/chunks/3.js"
+    },
+    {
+      "id": "./HOC/informationLayout.js",
+      "name": "./HOC/informationLayout.js",
       "file": "static/chunks/3.js",
       "publicPath": "static/chunks/3.js"
     },
@@ -11,12 +17,24 @@
       "name": "./pages/about.js",
       "file": "static/chunks/3.js",
       "publicPath": "static/chunks/3.js"
+    },
+    {
+      "id": "./static/better2.jpg",
+      "name": "./static/better2.jpg",
+      "file": "static/chunks/3.js",
+      "publicPath": "static/chunks/3.js"
+    },
+    {
+      "id": "./static/better3.jpg",
+      "name": "./static/better3.jpg",
+      "file": "static/chunks/3.js",
+      "publicPath": "static/chunks/3.js"
     }
   ],
   "./contact": [
     {
-      "id": "./HOC/mainLayout.js",
-      "name": "./HOC/mainLayout.js",
+      "id": "./HOC/informationLayout.js",
+      "name": "./HOC/informationLayout.js",
       "file": "static/chunks/4.js",
       "publicPath": "static/chunks/4.js"
     },
@@ -37,8 +55,14 @@
   ],
   "./frameworks": [
     {
-      "id": "./HOC/mainLayout.js",
-      "name": "./HOC/mainLayout.js",
+      "id": "./HOC/blocksLayout.js",
+      "name": "./HOC/blocksLayout.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    },
+    {
+      "id": "./HOC/informationLayout.js",
+      "name": "./HOC/informationLayout.js",
       "file": "static/chunks/1.js",
       "publicPath": "static/chunks/1.js"
     },
@@ -129,8 +153,8 @@
   ],
   "./projects": [
     {
-      "id": "./HOC/mainLayout.js",
-      "name": "./HOC/mainLayout.js",
+      "id": "./HOC/blocksLayout.js",
+      "name": "./HOC/blocksLayout.js",
       "file": "static/chunks/2.js",
       "publicPath": "static/chunks/2.js"
     },

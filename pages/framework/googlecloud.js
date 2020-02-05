@@ -1,5 +1,5 @@
 // import React from 'react'
-import mainLayout from '../../HOC/mainLayout'
+import pageLayout from '../../HOC/pageLayout'
 // import "../css/style.css"
 
 const GoogleCloud = () => {
@@ -16,4 +16,4 @@ const details = {
     page: 'Google Cloud'
   }
 
-export default mainLayout(details)(GoogleCloud)
+export default pageLayout(details)(GoogleCloud)

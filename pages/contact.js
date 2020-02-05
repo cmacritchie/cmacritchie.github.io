@@ -1,25 +1,31 @@
-import withLayout from '../HOC/mainLayout'
-import mainLayout from '../HOC/mainLayout';
+import withLayout from '../HOC/informationLayout'
+import informationLayout from '../HOC/informationLayout';
 import { LinkedIn, GitHub, MailOutline } from '@material-ui/icons';
 import "../css/style.css"
 
+const iconProp = { fontSize: '50px', verticalAlign: 'middle' }
+
 const Contact = () => (
-    <div>
+    <div className="content__text about-content">
         <div className="contact-icons">
           <a href="https://www.linkedin.com/in/craig-macritchie/">
-            <LinkedIn style={{ fontSize: 50 }} />
+            <LinkedIn style={iconProp} />
           </a>
           <a href="https://github.com/cmacritchie">
-            <GitHub style={{ fontSize: 50 }} />
+            <GitHub style={iconProp} />
           </a>
           <a href="mailto:craig.macritchie@gmail.com?subject=Portfolio website">
-            <MailOutline style={{ fontSize: 50 }} />
+            <MailOutline style={iconProp} />
           </a>
         </div>
-        <p className="content__text">
+        <p>
           If you have any questions or comments please
           contact me, I'm always looking to improve!
         </p>
+        <br />
+        <br />
+        <h3>I am currently working on:</h3>
+        <h2>DevOps</h2>
     </div>
   );
 
@@ -27,4 +33,4 @@ const Contact = () => (
     page: 'contact'
   }
 
-export default mainLayout(details)(Contact)
+export default informationLayout(details)(Contact)

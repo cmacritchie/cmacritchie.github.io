@@ -1,5 +1,5 @@
 // import React from 'react'
-import mainLayout from '../../HOC/mainLayout'
+import pageLayout from '../../HOC/pageLayout'
 // import "../css/style.css"
 
 const Node = () => {
@@ -43,4 +43,4 @@ const details = {
     page: 'Python'
   }
 
-export default mainLayout(details)(Node)
+export default pageLayout(details)(Node)

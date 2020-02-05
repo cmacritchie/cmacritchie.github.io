@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[3],{
 
-/***/ "./HOC/mainLayout.js":
-/*!***************************!*\
-  !*** ./HOC/mainLayout.js ***!
-  \***************************/
+/***/ "./HOC/blocksLayout.js":
+/*!*****************************!*\
+  !*** ./HOC/blocksLayout.js ***!
+  \*****************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -11,15 +11,16 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Users\\747049\\Desktop\\craigio\\HOC\\mainLayout.js";
+var _jsxFileName = "C:\\Users\\747049\\Desktop\\craigio\\HOC\\blocksLayout.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-var mainLayout = function mainLayout(_ref) {
+var blocksLayout = function blocksLayout(_ref) {
   var page = _ref.page;
   return function (Page) {
     return function () {
       return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("div", {
+        className: "section-content",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 5
@@ -46,6 +47,74 @@ var mainLayout = function mainLayout(_ref) {
           lineNumber: 10
         },
         __self: this
+      }, __jsx("div", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 11
+        },
+        __self: this
+      }, __jsx(Page, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12
+        },
+        __self: this
+      })))));
+    };
+  };
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (blocksLayout);
+
+/***/ }),
+
+/***/ "./HOC/informationLayout.js":
+/*!**********************************!*\
+  !*** ./HOC/informationLayout.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "C:\\Users\\747049\\Desktop\\craigio\\HOC\\informationLayout.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+var informationLayout = function informationLayout(_ref) {
+  var page = _ref.page;
+  return function (Page) {
+    return function () {
+      return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("div", {
+        className: "section-content",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 5
+        },
+        __self: this
+      }, __jsx("header", {
+        className: "headster",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 6
+        },
+        __self: this
+      }, __jsx("h1", {
+        className: "headster__text-box",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 7
+        },
+        __self: this
+      }, page)), __jsx("div", {
+        className: "information",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 10
+        },
+        __self: this
       }, __jsx(Page, {
         __source: {
           fileName: _jsxFileName,
@@ -57,7 +126,7 @@ var mainLayout = function mainLayout(_ref) {
   };
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (mainLayout);
+/* harmony default export */ __webpack_exports__["default"] = (informationLayout);
 
 /***/ }),
 
@@ -72,9 +141,10 @@ var mainLayout = function mainLayout(_ref) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _HOC_mainLayout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../HOC/mainLayout */ "./HOC/mainLayout.js");
-/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../css/style.css */ "./css/style.css");
-/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_css_style_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _HOC_blocksLayout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../HOC/blocksLayout */ "./HOC/blocksLayout.js");
+/* harmony import */ var _HOC_informationLayout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../HOC/informationLayout */ "./HOC/informationLayout.js");
+/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../css/style.css */ "./css/style.css");
+/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_css_style_css__WEBPACK_IMPORTED_MODULE_3__);
 var _jsxFileName = "C:\\Users\\747049\\Desktop\\craigio\\pages\\about.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
@@ -90,10 +160,41 @@ var About = function About() {
       lineNumber: 6
     },
     __self: this
-  }, __jsx("p", {
+  }, __jsx("picture", {
+    className: "about-image",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
+    },
+    __self: this
+  }, __jsx("source", {
+    media: "(max-width: 799px)",
+    srcSet: __webpack_require__(/*! ../static/better2.jpg */ "./static/better2.jpg"),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }), __jsx("source", {
+    media: "(min-width: 800px)",
+    srcSet: __webpack_require__(/*! ../static/better3.jpg */ "./static/better3.jpg"),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }), __jsx("img", {
+    srcSet: __webpack_require__(/*! ../static/better3.jpg */ "./static/better3.jpg"),
+    alt: "craig macritchie",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  })), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
     },
     __self: this
   }, "Hi! My name is Craig MacRitchie and I'm a full Stack developer based in Calgary. I enjoy working with a number of different technologies, though I have a passion for working with javascript. I've worked with a number of data science technologies and hope to learn more in the future."));
@@ -102,7 +203,7 @@ var About = function About() {
 var details = {
   page: 'about me'
 };
-/* harmony default export */ __webpack_exports__["default"] = (Object(_HOC_mainLayout__WEBPACK_IMPORTED_MODULE_1__["default"])(details)(About)); // backend moving towards microservices
+/* harmony default export */ __webpack_exports__["default"] = (Object(_HOC_informationLayout__WEBPACK_IMPORTED_MODULE_2__["default"])(details)(About)); // backend moving towards microservices
 // ide plugins
 // tech:
 // 80% java
@@ -116,6 +217,28 @@ var details = {
 // ember 
 // tight nit team 
 // not tied to a team as much as the backend
+
+/***/ }),
+
+/***/ "./static/better2.jpg":
+/*!****************************!*\
+  !*** ./static/better2.jpg ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/better2-1b8089fe91bf1bc82aeacd4068cf1d74.jpg";
+
+/***/ }),
+
+/***/ "./static/better3.jpg":
+/*!****************************!*\
+  !*** ./static/better3.jpg ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/better3-f5b186c94e27ba81bfc641e490c99818.jpg";
 
 /***/ })
 

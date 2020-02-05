@@ -1,6 +1,6 @@
-import withLayout from '../HOC/mainLayout'
-import mainLayout from '../HOC/mainLayout';
-import fadeInSection from '../HOC/fadeInSection';
+import withLayout from '../HOC/informationLayout'
+import blocksLayout from '../HOC/blocksLayout';
+import FadeInSection from '../HOC/fadeInSection';
 import "../css/style.css"
 import frameworks from '../icons/frameworks'
 import Link from 'next/link';
@@ -10,7 +10,8 @@ const Frameworks = () => {
     const prepareframeworks = () => {
         return frameworks.map(item => {
             return (
-                <Link key={item.title} href={`/framework/${item.link}`} passHref>
+              <FadeInSection key={item.title}>
+                <Link href={`/framework/${item.link}`} passHref>
                     <div className="feature-box" >                  
                         <div>
                         <h3>{item.title}</h3>  
@@ -21,6 +22,7 @@ const Frameworks = () => {
                         </div>
                     </div>
                 </Link>
+              </FadeInSection>
             )
         })
     }
@@ -35,5 +37,5 @@ return (
     page: 'Skills'
   }
 
-export default mainLayout(details)(Frameworks)
+export default blocksLayout(details)(Frameworks)
 // export default fadeInSection(Frameworks)

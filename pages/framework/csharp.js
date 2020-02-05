@@ -1,5 +1,5 @@
 // import React from 'react'
-import mainLayout from '../../HOC/mainLayout'
+import pageLayout from '../../HOC/pageLayout'
 // import "../css/style.css"
 
 const Csharp = () => {
@@ -25,4 +25,4 @@ const details = {
     page: 'C#'
   }
 
-export default mainLayout(details)(Csharp)
+export default pageLayout(details)(Csharp)

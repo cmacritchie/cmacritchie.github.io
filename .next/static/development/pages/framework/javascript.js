@@ -147,7 +147,7 @@ var details = {
 
 /***/ }),
 
-/***/ 0:
+/***/ 2:
 /*!********************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fframework%2Fjavascript&absolutePagePath=C%3A%5CUsers%5C747049%5CDesktop%5Ccraigio%5Cpages%5Cframework%5Cjavascript.js ***!
   \********************************************************************************************************************************************************************/
@@ -170,5 +170,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js","styles"]]]);
+},[[2,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=javascript.js.map

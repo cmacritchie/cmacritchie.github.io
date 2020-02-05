@@ -1,5 +1,5 @@
-import withLayout from '../HOC/mainLayout'
-import mainLayout from '../HOC/mainLayout';
+import FadeInSection from '../HOC/fadeInSection';
+import blocksLayout from '../HOC/blocksLayout';
 import "../css/style.css"
 import projects from '../icons/projects'
 import Link from 'next/link';
@@ -10,20 +10,22 @@ const Projects = () => {
     const prepareProjects = () => {
         return projects.map(item => {
             return (
-                <Link key={item.title} href={`/project/${item.link}`} passHref>
-                    <div className="feature-box" >                  
-                        <div>
-                            <h3>{item.title}</h3>
-                            
-                            <picture className="feature-box__image"> 
-                                <source media="(max-width: 799px)" srcSet={require(`../static/thumbnails/${item.thumbnailSmall}`)} />
-                                <source media="(min-width: 800px)" srcSet={require(`../static/thumbnails/${item.thumbnailLarge}`)}/>
-                                <img srcSet={require('../static/thumbnails/Louis_Riel1.jpg')} alt="louis riel" />
-                            </picture>
-                            <p className="feature-box__description">{item.description}</p>
+                <FadeInSection key={item.title}>
+                    <Link href={`/project/${item.link}`} passHref>
+                        <div className="feature-box" >                  
+                            <div>
+                                <h3>{item.title}</h3>
+                                
+                                <picture className="feature-box__image"> 
+                                    <source media="(max-width: 799px)" srcSet={require(`../static/thumbnails/${item.thumbnailSmall}`)} />
+                                    <source media="(min-width: 800px)" srcSet={require(`../static/thumbnails/${item.thumbnailLarge}`)}/>
+                                    <img srcSet={require('../static/thumbnails/Louis_Riel1.jpg')} alt="louis riel" />
+                                </picture>
+                                <p className="feature-box__description">{item.description}</p>
+                            </div>
                         </div>
-                    </div>
-                </Link>
+                    </Link>
+                </FadeInSection>
             )
         })
     }
@@ -38,4 +40,4 @@ return (
     page: 'projects'
   }
 
-export default mainLayout(details)(Projects)
+export default blocksLayout(details)(Projects)
