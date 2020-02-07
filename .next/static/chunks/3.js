@@ -40,23 +40,30 @@ var blocksLayout = function blocksLayout(_ref) {
           lineNumber: 7
         },
         __self: this
-      }, page)), __jsx("div", {
-        className: "content",
+      }, page), __jsx("div", {
+        className: "underline",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 10
+          lineNumber: 8
         },
         __self: this
-      }, __jsx("div", {
+      })), __jsx("div", {
+        className: "content",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 11
         },
         __self: this
-      }, __jsx(Page, {
+      }, __jsx("div", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 12
+        },
+        __self: this
+      }, __jsx(Page, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 13
         },
         __self: this
       })))));
@@ -94,7 +101,7 @@ var informationLayout = function informationLayout(_ref) {
           lineNumber: 5
         },
         __self: this
-      }, __jsx("header", {
+      }, __jsx("div", {
         className: "headster",
         __source: {
           fileName: _jsxFileName,
@@ -108,17 +115,24 @@ var informationLayout = function informationLayout(_ref) {
           lineNumber: 7
         },
         __self: this
-      }, page)), __jsx("div", {
+      }, page), __jsx("div", {
+        className: "underline",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 8
+        },
+        __self: this
+      })), __jsx("div", {
         className: "information",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 10
+          lineNumber: 11
         },
         __self: this
       }, __jsx(Page, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 11
+          lineNumber: 12
         },
         __self: this
       }))));

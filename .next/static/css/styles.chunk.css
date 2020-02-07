@@ -85,6 +85,9 @@ body {
   line-height: 1.7;
   color: #777; }
 
+.content p {
+  margin-bottom: 1.5rem; }
+
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
@@ -143,7 +146,7 @@ a {
   justify-content: space-around; }
 
 .feature-box {
-  background-color: #f7f7f7;
+  background-color: white;
   border: solid #032545;
   border-radius: 5px;
   padding: 0.5rem;
@@ -176,11 +179,12 @@ a {
 
 .content {
   padding: 3rem;
-  display: flex;
-  justify-content: center; }
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
   @media only screen and (max-width: 56.25em) {
     .content {
-      padding: 0.5rem; } }
+      padding: 1rem; } }
   .content__text {
     max-width: 700px;
     text-align: center;
@@ -189,6 +193,8 @@ a {
     border-radius: 10px;
     padding: 3rem;
     color: white; }
+    .content__text p {
+      margin-top: 1.5rem; }
 
 .about-image img {
   border-radius: 50%; }
@@ -204,7 +210,7 @@ a {
 .page-container {
   max-width: 120rem;
   margin: 0rem auto;
-  margin-top: 10rem;
+  margin-top: 3rem;
   background-color: white;
   box-shadow: black;
   min-height: 50rem;
@@ -241,15 +247,26 @@ a {
   position: relative;
   bottom: 150px; }
 
+.flip {
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1); }
+
 .nav_sticky {
   background-color: #032545;
   -webkit-transition: background-color 100ms linear;
   -ms-transition: background-color 100ms linear;
   transition: background-color 100ms linear; }
-  .nav_sticky a {
-    color: white; }
+  .nav_sticky .navigation-links__button {
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    border-bottom: 2px solid white;
+    color: white;
+    cursor: pointer; }
     @media (hover: hover) and (pointer: fine) {
-      .nav_sticky a:hover {
+      .nav_sticky .navigation-links__button:hover {
         color: white;
         background-color: dodgerblue; } }
 
@@ -299,6 +316,14 @@ a {
     @media only screen and (max-width: 56.25em) {
       .navigation-links__icon {
         display: block; } }
+  .navigation-links__page {
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    border-bottom: 2px solid white;
+    flex: 3;
+    text-transform: uppercase;
+    text-align: center;
+    color: white; }
 
 #pre-navigation {
   height: 1px; }
@@ -335,6 +360,26 @@ a {
   background-color: #032545; }
   .footer__link {
     color: dodgerblue; }
+
+.disappear {
+  opacity: 0;
+  transition: opacity 0.2s; }
+
+.appear {
+  opacity: 1;
+  transition: opacity 0.2s; }
+
+.underline {
+  margin-top: 1.5em;
+  border-top: 3px dotted #032545;
+  width: 25%; }
+
+.headster {
+  margin-top: 2vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/

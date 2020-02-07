@@ -40,23 +40,30 @@ const blocksLayout = ({
       lineNumber: 7
     },
     __self: undefined
-  }, page)), __jsx("div", {
-    className: "content",
+  }, page), __jsx("div", {
+    className: "underline",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 8
     },
     __self: undefined
-  }, __jsx("div", {
+  })), __jsx("div", {
+    className: "content",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11
     },
     __self: undefined
-  }, __jsx(Page, {
+  }, __jsx("div", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
+    },
+    __self: undefined
+  }, __jsx(Page, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
     },
     __self: undefined
   })))));
@@ -91,7 +98,7 @@ const informationLayout = ({
       lineNumber: 5
     },
     __self: undefined
-  }, __jsx("header", {
+  }, __jsx("div", {
     className: "headster",
     __source: {
       fileName: _jsxFileName,
@@ -105,17 +112,24 @@ const informationLayout = ({
       lineNumber: 7
     },
     __self: undefined
-  }, page)), __jsx("div", {
+  }, page), __jsx("div", {
+    className: "underline",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: undefined
+  })), __jsx("div", {
     className: "information",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 11
     },
     __self: undefined
   }, __jsx(Page, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 12
     },
     __self: undefined
   }))));
@@ -148,13 +162,13 @@ __webpack_require__.r(__webpack_exports__);
   icon: 'icons8-nodejs.svg',
   description: "Express, websockets, JWT, Middleware, npm"
 }, {
-  title: "MongoDb",
+  title: "Database",
   keywords: ["noSQL"],
   link: 'mongodb',
   icon: 'icons8-mongodb.svg',
   description: "NoSQL, Mongoose, Mongo Atlas, aggregation"
 }, {
-  title: "Docker",
+  title: "DevOps",
   keywords: ["container", "containerization"],
   picture: "no pic",
   link: 'docker',
@@ -182,14 +196,14 @@ __webpack_require__.r(__webpack_exports__);
   icon: 'icons8-windows-10.svg',
   description: "MVC, Full Stack, Entity Framework"
 }, {
-  title: "CSS3 & SASS",
+  title: "Styling",
   keywords: ["css", "styling"],
   picture: "no pic",
   link: 'sass',
   icon: 'icons8-sass.svg',
-  description: "BEM, stylesheets, animations"
+  description: "CSS3, Sass, BEM, animations"
 }, {
-  title: "Google Cloud",
+  title: "Cloud Applications",
   keywords: ["container", "containerization"],
   picture: "no pic",
   link: 'googlecloud',

@@ -6,6 +6,10 @@ body {
     color: $color-grey-dark;
 }
 
+.content p {
+    margin-bottom: 1.5rem;
+}
+
 .heading-primary {
     color: $color-white;
     text-transform: uppercase;
@@ -62,4 +66,5 @@ body {
         }
     }
 }
+
 

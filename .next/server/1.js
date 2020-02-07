@@ -40,23 +40,30 @@ const blocksLayout = ({
       lineNumber: 7
     },
     __self: undefined
-  }, page)), __jsx("div", {
-    className: "content",
+  }, page), __jsx("div", {
+    className: "underline",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 8
     },
     __self: undefined
-  }, __jsx("div", {
+  })), __jsx("div", {
+    className: "content",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11
     },
     __self: undefined
-  }, __jsx(Page, {
+  }, __jsx("div", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
+    },
+    __self: undefined
+  }, __jsx(Page, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
     },
     __self: undefined
   })))));

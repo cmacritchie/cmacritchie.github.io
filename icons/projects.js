@@ -2,9 +2,9 @@ export default [
     {
         title:"LR House",
         keywords:["javascript"],
-        description:"descriptions here",
-        picture:"no pic",
-        link:'node',
+        description:"Harry Potter House style MERN application",
+        picture:"",
+        link:'louisRiel',
         thumbnailSmall:'Louis_Riel1.jpg', 
         thumbnailLarge:'InkedLouis_Riel_HarryPotter.jpg'    
 
@@ -12,10 +12,10 @@ export default [
     {
         title:"SEDI Webscraping",
         keywords:["python", "beautiful soup"],
-        description:"built with MySQL, python and beautiful soup",
+        description:"Webscraping application using Python",
         picture:"no pic",
-        link:'node',
-        thumbnailSmall:'Louis_Riel1.jpg', 
+        link:'scraping',
+        thumbnailSmall:'Scrapping.png', 
         thumbnailLarge:'InkedLouis_Riel_HarryPotter.jpg' 
     },
     {
@@ -23,35 +23,17 @@ export default [
         keywords:["javascript"],
         description:"MERN Stack Project for tracking progress",
         picture:"no pic",
-        link:'node',
-        thumbnailSmall:'Louis_Riel1.jpg', 
+        link:'tracker',
+        thumbnailSmall:'TrackerIcon.png', 
         thumbnailLarge:'InkedLouis_Riel_HarryPotter.jpg' 
     },
     {
         title:"Home Irrigation",
         keywords:["javascript"],
-        description:"descriptions here",
+        description:"IoT device using Python and Raspberry Pi",
         picture:"no pic",
-        link:'node',
-        thumbnailSmall:'Louis_Riel1.jpg', 
+        link:'irrigation',
+        thumbnailSmall:'irrigationIcon2.jpg', 
         thumbnailLarge:'InkedLouis_Riel_HarryPotter.jpg' 
-    },
-    {
-        title:"2017 U of C Hackathon",
-        keywords:["javascript"],
-        description:"descriptions here",
-        picture:"no pic",
-        link:'node',
-        thumbnailSmall:'Louis_Riel1.jpg', 
-        thumbnailLarge:'InkedLouis_Riel_HarryPotter.jpg' 
-    },
-    {
-        title:"2017 SAIT Cisco Hackathon",
-        keywords:["javascript"],
-        description:"descriptions here",
-        picture:"no pic",
-        link:'node',
-        thumbnailSmall:'Louis_Riel1.jpg', 
-        thumbnailLarge:'InkedLouis_Riel_HarryPotter.jpg' 
-    },
+    }
 ]

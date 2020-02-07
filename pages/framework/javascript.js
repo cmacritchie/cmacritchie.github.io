@@ -1,25 +1,30 @@
 // import React from 'react'
-import pageLayout from '../../HOC/pageLayout'
+import PageLayout from '../../HOC/pageLayout'
 // import "../css/style.css"
+const pageDetails = {
+    title: 'Javascript',
+    back:'/#skills',
+    next:'/framework/react',
+    nextTitle:'React / Redux'
+  }
 
-const Node = () => {
+const Javascript = () => {
     return (
-        <>
+        <PageLayout pageDetails={pageDetails}>
             <p>
-                My Javascript carreer started off  when I learned vanilla javascript, then eventually Jquery. I really liked the 
+                My Javascript carreer started off  when I learned vanilla javascript, then eventually moved to JQuery. I really liked the 
                 syntax and maleability of javascript so I decided to study other javascript libraries including React, Node.js, Next.js
-                and other npm packages
+                among other npm packages
             </p>
             <p>
                 Recently, I started looking at data structures and algorithms by looking at stephen Griders' course on Udemy.
-                I really enjoy working on MERN stack projects. 
+                I enjoy working on MERN stack projects and trying out new libraries.  
             </p>
-        </>
+            <p>
+                I am familiar with ES6 syntax and currently learning more about ES7. 
+            </p>
+        </PageLayout>
     )
 }
 
-const details = {
-    page: 'Javascript'
-  }
-
-export default pageLayout(details)(Node)
+export default Javascript

@@ -39,7 +39,6 @@ a { color:$color-primary-dark2}
 
 .headster {
     font-size: 1.4rem;
-    
 
     &__text-box {
         text-transform: uppercase;
@@ -61,7 +60,7 @@ a { color:$color-primary-dark2}
 }
 
 .feature-box {
-    background-color: $color-grey-light-1;
+    background-color: white;
     border: solid $color-primary-dark2;
     border-radius: 5px;
     padding: 0.5rem;
@@ -105,11 +104,13 @@ a { color:$color-primary-dark2}
 
 .content {
     padding: 3rem;
-    display: flex;
+    // display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 
     @include respond(tab-port) {
-        padding: 0.5rem;
+        padding: 1rem;
     }
 
     &__text {      
@@ -120,8 +121,13 @@ a { color:$color-primary-dark2}
         border-radius: 10px;
         padding: 3rem;
         color: white;
-
+    
+        & p {
+            margin-top: 1.5rem;
+        }
     }
+
+
 }
 
 .about-image {
@@ -149,7 +155,7 @@ a { color:$color-primary-dark2}
 .page-container {
     max-width: 120rem;
     margin: 0rem auto;
-    margin-top: 10rem;
+    margin-top: 3rem; 
     background-color:white;
     box-shadow: black;
     min-height: 50rem;
@@ -210,14 +216,26 @@ a { color:$color-primary-dark2}
     
 }
 
+.flip {
+    -moz-transform: scale(-1, 1);
+-webkit-transform: scale(-1, 1);
+-o-transform: scale(-1, 1);
+-ms-transform: scale(-1, 1);
+transform: scale(-1, 1);
+}
+
 .nav_sticky {
     background-color: $color-primary-dark2;
     -webkit-transition: background-color 100ms linear;
     -ms-transition: background-color 100ms linear;
     transition: background-color 100ms linear;
 
-    & a {
+    & .navigation-links__button {
+        border-right: 1px solid white;
+        border-left:  1px solid white;
+        border-bottom: 2px solid white;
         color:white;
+        cursor: pointer;
 
         @media(hover: hover) and (pointer: fine) {
             &:hover {
@@ -244,6 +262,16 @@ a { color:$color-primary-dark2}
         }
     }
 }
+
+// .navigation-item {
+//     line-height: 56px;
+//     line-height: 56px;
+//     text-align: center;
+//     display: flex;
+//     justify-content: space-around;
+//     position: -webkit-sticky;
+//     position: sticky;
+// }
 
 .navigation-links {
     
@@ -281,6 +309,7 @@ a { color:$color-primary-dark2}
                 transition-duration: 0.5s;
                 color: $color-primary-dark;
                 transform: scale(1.5);
+
                 @media(hover: hover) and (pointer: fine) {
                     &:hover {
                         color: white;
@@ -319,6 +348,16 @@ a { color:$color-primary-dark2}
             display: block;
         }
     }
+
+    &__page {
+        border-right: 1px solid white;
+        border-left:  1px solid white;
+        border-bottom: 2px solid white;
+        flex: 3;
+        text-transform: uppercase;
+        text-align: center;
+        color: white
+    }
 }
 
 #pre-navigation {
@@ -329,9 +368,8 @@ a { color:$color-primary-dark2}
     padding-top: 56px;
     // scroll-behavior: smooth;
     // margin-bottom: 25vh;
-
-   
 }
+
 
 .about-content {
     padding-bottom: 10vh;
@@ -368,5 +406,32 @@ a { color:$color-primary-dark2}
     &__link {
         color: $color-primary-dark
     }
-    
 }
+
+.disappear {
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.appear {
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+.underline {
+    // max-width: 80%;
+    margin-top: 1.5em;
+    border-top: 3px dotted $color-primary-dark2;
+    width: 25%;
+}
+
+.headster {
+
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // max-width: 80%;
+}
+     

@@ -26,7 +26,7 @@ const informationLayout = ({
       lineNumber: 5
     },
     __self: undefined
-  }, __jsx("header", {
+  }, __jsx("div", {
     className: "headster",
     __source: {
       fileName: _jsxFileName,
@@ -40,17 +40,24 @@ const informationLayout = ({
       lineNumber: 7
     },
     __self: undefined
-  }, page)), __jsx("div", {
+  }, page), __jsx("div", {
+    className: "underline",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: undefined
+  })), __jsx("div", {
     className: "information",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 11
     },
     __self: undefined
   }, __jsx(Page, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 12
     },
     __self: undefined
   }))));
