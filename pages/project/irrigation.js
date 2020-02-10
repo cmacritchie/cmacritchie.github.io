@@ -24,7 +24,7 @@ const LouisRiel = () => {
                 recorded hourly and stored on a MySQL database. 
             </p>
             <picture className="picture-responsive">
-                <img src={require(`../../static/irrigation1.jpg`)} />
+                <img src={require(`../../assets/irrigation1.jpg`)} />
             </picture>
             
             <p>The electronic components include:</p> 

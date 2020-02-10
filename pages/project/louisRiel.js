@@ -34,7 +34,7 @@ const LouisRiel = () => {
                 that had been whiteListed. 
             </p>
             <picture className="picture-responsive">
-                <img src={require(`../../static/louisriel1.jpg`)} />
+                <img src={require(`../../assets/louisriel1.jpg`)} />
             </picture>
             <br />
             <a target="_blank" rel="noopener noreferrer" href="https://github.com/cmacritchie/louisrielwebr">Louis Riel Houses Client Code </a>

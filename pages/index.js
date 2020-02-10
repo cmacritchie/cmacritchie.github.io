@@ -11,21 +11,37 @@ import Projects from './projects'
 import Contact from './contact'
 
 const HomePage = () => {
-  const [highlighted, setHighlighted] = useState('home');
+  const [highlighted, setHighlighted] = useState([]);
 
   useEffect(() => {
 
+    // .splice(1, 0, 'Feb');
     const observer = new IntersectionObserver(entries => {
 
       entries.forEach(entry => {
+        if(entry.isIntersecting){
+          
+          if(entry.boundingClientRect.top >= entry.rootBounds.top && entry.boundingClientRect.top < entry.rootBounds.bottom ) {
+            // console.log('entry from bottom ', entry.target.id)
+            setHighlighted(oldArray => [entry.target.id, ...oldArray])
+        }
 
-        if((entry.intersectionRect.height / entry.rootBounds.height) > 0.6) {
-          setHighlighted(entry.target.id)
-        } 
+          if(entry.boundingClientRect.bottom >= entry.rootBounds.top && entry.boundingClientRect.bottom < entry.rootBounds.bottom ) {
+            // console.log('entry from top ', entry.target.id)
+            setHighlighted(oldArray => [...oldArray.slice(0,1), entry.target.id, ...oldArray.slice(1)])
+          }
+        }
+
+        if(!entry.isIntersecting){
+          if(entry.boundingClientRect.top > entry.rootBounds.bottom){
+            setHighlighted(oldArray => oldArray.filter(item => item !== entry.target.id))
+          } 
+        }
       })
       }, {
-          rootMargin: '0px 0px -60% 0px', //top, right, bottom left
-          threshold:[0, 0.5, 0.1, 0.15, 0.2, 0.25, 0.4, 0.6, 0.8, 1] 
+          rootMargin: '0px 0px -75% 0px', //top, right, bottom left
+          // threshold:[0, 0.5, 0.1, 0.15, 0.2, 0.25, 0.4, 0.6, 0.8, 1] 
+          threshold:[0, 1] 
       });
       
 
@@ -43,6 +59,8 @@ const HomePage = () => {
     }
   }, []);
 
+  console.log(highlighted)
+
   return (
       <>
       <style jsx>{`
@@ -53,12 +71,12 @@ const HomePage = () => {
           rgba(30, 144, 255, 0.5),
           rgba(3, 37, 69, 0.5)
           ),
-          url(../../static/mountain2.jpg);
+          url(${require('../assets/mountain2.jpg')});
         background-repeat: repeat-x; 
         background-size: cover;
         background-position: left;
         position: relative; 
-
+ 
       }
     }
 
@@ -66,10 +84,10 @@ const HomePage = () => {
       .header{
         background-position: center;
           background-image: linear-gradient(
-              rgba(130, 201, 228, 0.5),
-              rgba(30, 144, 255, 0.5)
+            rgba(30, 144, 255, 0.5),
+            rgba(3, 37, 69, 0.5)
               ),
-              url(../../static/mountain2_phone.jpg);
+              url( ${require('../assets/mountain2_phone.jpg')});
       }
     }
     `}</style>
@@ -86,7 +104,7 @@ const HomePage = () => {
             </h1> 
           </div>   
         </header>
-        <Navigation currentTab ={highlighted} />
+        <Navigation currentTab ={highlighted[0]} />
         <div className="body">       
           <div className={`sections navigation-block`} id="about">
             <FadeInSection>

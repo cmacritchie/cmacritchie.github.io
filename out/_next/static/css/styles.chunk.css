@@ -116,6 +116,12 @@ body {
     animation-duration: 1s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards; }
+    .heading-primary--sub--1 {
+      animation-delay: 0.75s; }
+    .heading-primary--sub--2 {
+      animation-delay: 1.25s; }
+    .heading-primary--sub--3 {
+      animation-delay: 1.75s; }
 
 .container {
   box-shadow: darkblue;

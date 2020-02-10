@@ -22,7 +22,7 @@ const Python = () => {
                 an electronic alarm using a python script. Our team finished first in this hackathon.
             </p>
             <picture className="picture-responsive">
-                <img src={require(`../../static/winnersEdit2.jpg`)} />
+                <img src={require(`../../assets/winnersEdit2.jpg`)} />
             </picture>
             <p>
                 In the 2017 U of C hackathon our team created a Biomedical IoT device. my Role in the project

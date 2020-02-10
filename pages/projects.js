@@ -19,7 +19,7 @@ const Projects = () => {
                                 <picture className="feature-box__image"> 
                                     {/* <source media="(max-width: 799px)" srcSet={require(`../static/thumbnails/${item.thumbnailSmall}`)} />
                                     <source media="(min-width: 800px)" srcSet={require(`../static/thumbnails/${item.thumbnailLarge}`)}/> */}
-                                    <img srcSet={require(`../static/thumbnails/${item.thumbnailSmall}`)} alt="louis riel" />
+                                    <img srcSet={require(`../assets/thumbnails/${item.thumbnailSmall}`)} alt="louis riel" />
                                 </picture>
                                 <p className="feature-box__description">{item.description}</p>
                             </div>

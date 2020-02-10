@@ -16,7 +16,7 @@ const Frameworks = () => {
                         <div>
                         <h3>{item.title}</h3>  
                         <picture className="feature-box__image">
-                        <img src={require(`../static/icons/${item.icon}`)} />
+                        <img src={require(`../assets/icons/${item.icon}`)} />
                         </picture>
                             <p className="feature-box__description">{item.description}</p>
                         </div>

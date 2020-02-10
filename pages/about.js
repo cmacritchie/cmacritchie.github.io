@@ -5,9 +5,9 @@ import "../css/style.css"
 const About = () => (
     <div className="content__text">
       <picture className="about-image"> 
-          <source media="(max-width: 799px)" srcSet={require(`../static/better2.jpg`)} />
-          <source media="(min-width: 800px)" srcSet={require(`../static/better3.jpg`)}/>  
-          <img srcSet={require('../static/better3.jpg')} alt="craig macritchie" />
+          <source media="(max-width: 799px)" srcSet={require(`../assets/better2.jpg`)} />
+          <source media="(min-width: 800px)" srcSet={require(`../assets/better3.jpg`)}/>  
+          <img srcSet={require('../assets/better3.jpg')} alt="craig macritchie" />
       </picture>
       <p>
         Hi! My name is Craig MacRitchie and I'm a full Stack developer based in Calgary.
