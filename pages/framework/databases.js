@@ -5,8 +5,8 @@ import PageLayout from '../../HOC/pageLayout'
 const pageDetails = {
     title: 'Databases',
     back:'/#skills',
-    next:'/framework/databases',
-    nextTitle:'Databases'
+    next:'/framework/devops',
+    nextTitle:'DevOps'
   }
 
 const Databases = () => {

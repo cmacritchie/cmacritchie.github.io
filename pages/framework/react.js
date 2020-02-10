@@ -13,14 +13,14 @@ const reactRedux = () => {
         <PageLayout pageDetails={pageDetails}>
             <p>
                 When I started my programming career I learned HTML and interacting with the DOM using 
-                vanilla javascript and JQuery. I heard about the benefits of React through some friends and 
+                vanilla javascript and JQuery. I heard about the benefits of React and 
                 decided to explore the framework. After taking a variety of courses, I can attest to the 
                 scalability and flexibility of React and currently use it as my go-to framework for building 
                 interactive UIs.
             </p>
             <p>
                 For larger projects I've used Redux for state-management; however, I've found the 
-                context API to be a very useful too and have used it on a couple of small projects.
+                context API to be a very useful tool and have used it on a couple of small projects.
                 For next steps in state management, I plan on using Apollo Client with GraphQL.
             </p>
             <p>

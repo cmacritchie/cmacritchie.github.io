@@ -27,7 +27,7 @@ export default [
         title:"DevOps",
         keywords:["container", "containerization"],
         link:'devops',
-        icon:'icons8-docker.svg',
+        icon:'devops.png',
         description: "Azure DevOps, Git, Docker, Travis CI",
     },
     {
@@ -65,7 +65,7 @@ export default [
         title:"Cloud Technologies",
         keywords:["container", "containerization"],
         link:'cloud',
-        icon:'icons8-google-cloud-platform.svg',
+        icon:'icons8-cloud-connection-100.png',
         description: "Azure, Google Cloud, FireStore, AWS",
     },
     {

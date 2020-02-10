@@ -6,11 +6,11 @@
 @import "base/base";
 @import "base/typography";
 
-@import "components/buttons";
+
 
 // @import "layout/footer";
 // @import "layout/grid";
-// @import "layout/header";
+// @import "layout/header"; 
 // @import "layout/navigation";
  
 // @import "pages/about";
@@ -19,7 +19,7 @@
 
 // @import "layout/mainLayout";
 
-.container {
+.container { 
     // max-width: 160rem;
     // margin: 8rem auto;
     // background-color: whitesmoke;
@@ -72,10 +72,10 @@ a { color:$color-primary-dark2}
     transition: transform .3s;
     cursor: pointer;
 
-    @include respond(tab-port) {
-        width: 16rem;
-        height: 17rem;
-    }
+    // @include respond(tab-port) {
+    //     width: 16rem;
+    //     height: 17rem;
+    // }
 
     &:hover {
         transform: scale(1.10);
@@ -95,9 +95,9 @@ a { color:$color-primary-dark2}
     &__description {
         display: block;
 
-        @include respond(tab-port) {
-            display: none;
-        }
+        // @include respond(tab-port) {
+        //     display: none;
+        // }
         
     }
 }
@@ -125,6 +125,10 @@ a { color:$color-primary-dark2}
         & p {
             margin-top: 1.5rem;
         }
+    }
+
+    & ul {
+        padding-left: 2.0rem;
     }
 
 
@@ -231,6 +235,7 @@ transform: scale(-1, 1);
     transition: background-color 100ms linear;
 
     & .navigation-links__button {
+        scroll-behavior: smooth;
         border-right: 1px solid white;
         border-left:  1px solid white;
         border-bottom: 2px solid white;
@@ -366,7 +371,7 @@ transform: scale(-1, 1);
 
 .sections {
     padding-top: 56px;
-    // scroll-behavior: smooth;
+    scroll-behavior: smooth;
     // margin-bottom: 25vh;
 }
 
@@ -403,8 +408,34 @@ transform: scale(-1, 1);
     margin: auto;
     background-color: $color-primary-dark2;
 
+    &__links {
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+        & a {
+            color:white
+        }
+    }
+
     &__link {
         color: $color-primary-dark
+    }
+}
+
+.picture-responsive{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+
+    & img {
+        align-self: center;
+        width:70%;
+        max-width:550px;
+        height: auto;
+        border-radius: 5px;
+        
     }
 }
 

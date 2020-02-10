@@ -33,9 +33,13 @@ const LouisRiel = () => {
                 authenticate user Roles, while Google strategy with Passport.js was selected to verify and add users with emails
                 that had been whiteListed. 
             </p>
-            <p>
-                <b>take a look at the source code HERE</b>
-            </p>
+            <picture className="picture-responsive">
+                <img src={require(`../../static/louisriel1.jpg`)} />
+            </picture>
+            <br />
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/cmacritchie/louisrielwebr">Louis Riel Houses Client Code </a>
+            <br />
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/cmacritchie/louisrielserver">Louis Riel Houses Server Code </a>
         </PageLayout>
     )
 }

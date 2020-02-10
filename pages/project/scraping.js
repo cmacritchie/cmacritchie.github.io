@@ -34,9 +34,7 @@ const LouisRiel = () => {
                 it was still manageable. after the records had been scrapped from the page, they were inserted into a MySQL 
                 database for further querying. 
             </p>
-            <p>
-                <b>Here is a link to the github page</b>
-            </p>
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/cmacritchie/sediscraping">SEDI web scraping git repository</a>
         </PageLayout>
     )
 }

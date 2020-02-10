@@ -1,9 +1,5 @@
-// import withLayout from '../HOC/withLayout'
 import { useEffect, useState } from 'react'
 import FadeInSection from '../HOC/fadeInSection'
-// import NavigationBlock from '../HOC/navigationBlocks'
-// import Link from 'next/link';
-// import dynamic from 'next/dynamic';
 import Navigation from '../components/Navigation'
 import Footer from '../components/Footer'
 

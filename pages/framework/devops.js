@@ -17,9 +17,6 @@ const DevOps = () => {
                 software quality with continuous delivery.
             </p>
             <p>
-                <b>devops photo</b>
-            </p>
-            <p>
                 Agile Software development and DevOps are two methodologies that go hand in hand to deliver quality software.
                 Professionally, I have worked in a Agile software environment where we would conduct daily scrums, two
                 week sprints, and code reviews. JIRA software was used to track issues throughout the development process
@@ -29,7 +26,6 @@ const DevOps = () => {
                 online repository solutions. Professionally, I have used Azure DevOps to build, test, conduct pull 
                 request, and deploy code with Continuous Intergration (CI) and Continuous Deployment (CD) pipelines.
             </p>
-            <p><b>docker pic?</b></p>
             <p>
                 In early 2020, I began exploring Docker and DockerHub. I created containers for front-end UI servers and
                 backend Node.js Servers and used an NGINX to route requests to the backend and front end servers. Next I used
