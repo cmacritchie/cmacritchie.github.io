@@ -59,8 +59,6 @@ const HomePage = () => {
     }
   }, []);
 
-  console.log(highlighted)
-
   return (
       <>
       <style jsx>{`
