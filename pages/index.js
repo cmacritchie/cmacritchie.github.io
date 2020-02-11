@@ -69,7 +69,7 @@ const HomePage = () => {
           rgba(30, 144, 255, 0.5),
           rgba(3, 37, 69, 0.5)
           ),
-          url(${require('../assets/mountain2.jpg')});
+          url(${require('../assets/mountain4.jpg')});
         background-repeat: repeat-x; 
         background-size: cover;
         background-position: left;

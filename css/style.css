@@ -139,7 +139,6 @@ a {
 
 .modules {
   display: flex;
-  margin: 0rem 15rem;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-around; }
@@ -162,10 +161,6 @@ a {
     border-radius: 5px;
     width: 15rem;
     height: 15rem; }
-    @media only screen and (max-width: 56.25em) {
-      .feature-box__image img {
-        width: 12rem;
-        height: 12rem; } }
   .feature-box__description {
     display: block; }
 

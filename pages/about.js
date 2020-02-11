@@ -10,10 +10,10 @@ const About = () => (
           <img srcSet={require('../assets/better3.jpg')} alt="craig macritchie" />
       </picture>
       <p>
-        Hi! My name is Craig MacRitchie and I'm a full Stack developer based in Calgary.
-        I enjoy working with a number of different technologies, though I have a passion 
-        for working with javascript. I've worked with a number of data science technologies
-        and hope to learn more in the future.  
+        Hi! My name is Craig MacRitchie and I'm a full stack developer & data scientist 
+        based in Calgary, Alberta. I enjoy working with new technologies, building applications, and
+        attending software meetups. I'm currently looking for new opportunities and looking 
+        forward to working on new projects.  
       </p>
     </div>
   );
